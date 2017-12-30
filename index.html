@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Placeholder Example</title>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+    crossorigin="anonymous">
+  </script>
+  <style>
+  figcaption {
+    font-size: smaller;
+    font-style: italic;
+    text-align: center;
+  }
+  .placeholder {
+    width: 50%;
+    height: auto;
+    min-height: 1rem;
+    outline: solid 1px silver;
+  }
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  </style>
+</head>
+<body>
+  <div class="placeholder centered">
+    <figure>
+      <placeholder
+        id="placeholder"
+        class="img-fluid"
+        src="/image.php?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F95%2FBig_Pine_landscape.jpg&width=autosize"
+        alt="Very Large Array" />
+    </figure>
+    <figcaption>Save the image to check file size and compare this to the original at: <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Big_Pine_landscape.jpg">https://upload.wikimedia.org/wikipedia/commons/9/95/Big_Pine_landscape.jpg</a>.<br />Courtesy of Wikipedia</figcaption>
+  </div>
+  <script
+    src="js/image-placeholder.js">
+  </script>
+</body>
+</html>
