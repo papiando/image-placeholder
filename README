@@ -1,0 +1,5 @@
+# image-placeholder
+
+jQuery script that replaces image placeholders with the actual image, deferring image load so that it can be manipulated.
+
+The example shows how the image gets resized before being loaded. You can actually confirm that the image gets resized by comparing the size of the original image with the one shown on the page.
